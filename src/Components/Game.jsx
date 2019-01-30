@@ -11,7 +11,9 @@ class Game extends React.Component {
           </div>
           <div className="game-info">
             <div>big changes</div>
-            <ol>{/* TODO */}</ol>
+            <ol>
+              <li>line item</li>
+            </ol>
           </div>
         </div>
       );
