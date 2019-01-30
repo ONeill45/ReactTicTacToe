@@ -8,7 +8,7 @@ class Board extends React.Component {
     }
   
     render() {
-      const status = 'Next player: Y';
+      const status = 'Next player: X';
   
       return (
         <div>
