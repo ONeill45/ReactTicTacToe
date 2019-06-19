@@ -50,6 +50,16 @@ class Game extends React.Component {
       ]),
       stepNumber: history.length,
       xIsNext: !this.state.xIsNext
+    }, () => {
+      fetch('http://localhost:3001/history', {
+        method: 'POST',
+        body: JSON.stringify(this.state.history),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      })
+      .then(res => res.json())
+      .then(data => console.log(data));
     });
   }
 
